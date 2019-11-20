@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import {ReactComponent as TrashCan} from './trashCan.svg';
+import {ReactComponent as EditEmoji} from './edit.svg';
 import './style.css';
 
 function ListElement(props) {
@@ -34,10 +36,10 @@ function ListElement(props) {
 
   return (
     <div className="listElement">
-      <span onClick={deleteElement} className="deleteElement">D</span>
+      <span onClick={deleteElement} className="deleteElement"><TrashCan className="icon"/></span>
       {!editing && <span onClick={changeCSS} className={"textElement" + " " +strikethrough}>{props.text}</span>}
       {editing && <input type="text" defaultValue={props.text} onChange={addChanges} className="editElementInput"/>}
-      <span onClick={switchToInput} className="editElement">✎</span>
+      <span onClick={switchToInput} className="editElement"><EditEmoji className="icon"/></span>
     </div>
   );
 }

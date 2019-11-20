@@ -48,7 +48,9 @@ h1 {
 	grid-template-columns: 1fr 100fr 1fr;
 	grid-template-areas: 'd t e';
 }
-
+.listElement:nth-child(2n) {
+	background: #f7f7f7;
+}
 .listElement:hover .deleteElement {
 	width: 40px;
 	opacity: 1;
@@ -64,7 +66,7 @@ h1 {
 
 .deleteElement {
 	cursor: pointer;
-	background: red;
+	background: #e74c3c;
 	color: white;
 	text-align: center;
 	line-height: 40px;
@@ -106,4 +108,10 @@ h1 {
 
 .textStrikethrough {
 	text-decoration: line-through;
+}
+
+.icon {
+	height: inherit;
+	width: inherit;
+	color: white;
 }
