@@ -1,4 +1,4 @@
-.container {
+.body {
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -8,8 +8,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.body {
-  font-family: Roboto;
+.background {
 	background: #43cea2; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
