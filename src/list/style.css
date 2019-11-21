@@ -93,7 +93,7 @@ h1 {
 }
 .editElement {
 	cursor: pointer;
-	background: blue;
+	background: #2980b9;
 	color: white;
 	text-align: center;
 	line-height: 40px;
