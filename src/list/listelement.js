@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {ReactComponent as TrashCan} from './trashCan.svg';
-import {ReactComponent as EditEmoji} from './edit.svg';
+import {ReactComponent as TrashCanIcon} from './trashCan.svg';
+import {ReactComponent as EditIcon} from './edit.svg';
+import {ReactComponent as CompleteIcon} from './complete.svg';
 import './style.css';
 
 function ListElement(props) {
@@ -13,11 +14,16 @@ function ListElement(props) {
     array.splice(props.index, 1);
     props.setElements(array);
   }
-  const switchToInput = () => {
+  const switchAction = () => {
     if(editing) {
       setEditing(false);
     } else {
       setEditing(true);
+    }
+  }
+  const finishEdit = (event) => {
+    if(event.key === "Enter") {
+      setEditing(false);
     }
   }
   const addChanges = (event) => {
@@ -36,10 +42,11 @@ function ListElement(props) {
 
   return (
     <div className="listElement">
-      <span onClick={deleteElement} className="deleteElement"><TrashCan className="icon"/></span>
+      <span onClick={deleteElement} className="deleteElement"><TrashCanIcon className="icon"/></span>
       {!editing && <span onClick={changeCSS} className={"textElement" + " " +strikethrough}>{props.text}</span>}
-      {editing && <input type="text" defaultValue={props.text} onChange={addChanges} className="editElementInput"/>}
-      <span onClick={switchToInput} className="editElement"><EditEmoji className="icon"/></span>
+      {editing && <input type="text" autoFocus defaultValue={props.text} onChange={addChanges} onKeyPress={finishEdit} className="editElementInput"/>}
+      {!editing && <span onClick={switchAction} className="editElement"><EditIcon className="icon"/></span>}
+      {editing && <span onClick={switchAction} className="editElement"><CompleteIcon className="icon"/></span>}
     </div>
   );
 }

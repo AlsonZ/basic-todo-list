@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ListElement from './listelement';
 import './style.css';
 
@@ -7,6 +7,7 @@ function List() {
   const [elements, setElements] = useState([]);
   const [action, setAction] = useState("➕");
   const [box, setBox] = useState("");
+  const inputElement = useRef(null);
 
   // useEffect(() => {
   //   checkSavedLists();
@@ -30,6 +31,7 @@ function List() {
     } else {
       setAction("➕");
       setBox("");
+      inputElement.current.focus();
     }
   }
 
@@ -43,7 +45,7 @@ function List() {
   return (
     <div className="container">
       <h1>Todo-list<i onClick={openBox} className="addElementIcon">{action}</i></h1>
-      <input type="text" placeholder="Add a new Todo" className={"addElementInput" + " " +box}onKeyPress={addElement}/>
+      <input type="text" autoFocus ref={inputElement} placeholder="Add a new Todo" className={"addElementInput" + " " +box}onKeyPress={addElement}/>
       {elements.map((object, index) => {
         // convert this to context later
         return (<ListElement key={index} index={index} setElements={setElements} elements={elements} text={object.text}></ListElement>);
