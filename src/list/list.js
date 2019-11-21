@@ -6,11 +6,11 @@ function List() {
 
   const [elements, setElements] = useState([]);
   const [action, setAction] = useState("➕");
-  const [box, setBox] = useState(true);
+  const [box, setBox] = useState("");
 
-  useEffect(() => {
-    checkSavedLists();
-  }, []);
+  // useEffect(() => {
+  //   checkSavedLists();
+  // }, []);
 
   const checkSavedLists = () => {
     // check cookies or w/e to determine if there is a previous list
@@ -23,20 +23,19 @@ function List() {
   }
   
   const openBox = () => {
+    // make these svg's later
     if(action == "➕") {
-      setAction("—");// "‒ is diff symbol" "— is also different"
-      setBox(false);
+      setAction("—");
+      setBox("openBox");
     } else {
       setAction("➕");
-      setBox(true);
+      setBox("");
     }
   }
 
   const addElement = (event) => {
     if(event.key === "Enter") {
-      // add new element
       setElements([...elements, {text:event.target.value}]);
-      // remove value in input
       event.target.value = '';
     }
   }
@@ -44,8 +43,7 @@ function List() {
   return (
     <div className="container">
       <h1>Todo-list<i onClick={openBox} className="addElementIcon">{action}</i></h1>
-      {/* change box to css so it keeps the text there if u - it */}
-      {box && <input type="text" placeholder="Add a new Todo" className="addElementInput" onKeyPress={addElement}/>}
+      <input type="text" placeholder="Add a new Todo" className={"addElementInput" + " " +box}onKeyPress={addElement}/>
       {elements.map((object, index) => {
         // convert this to context later
         return (<ListElement key={index} index={index} setElements={setElements} elements={elements} text={object.text}></ListElement>);
