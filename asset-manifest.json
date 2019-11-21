@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/basic-todo-list/static/css/main.c2c39915.chunk.css",
+    "main.css": "/basic-todo-list/static/css/main.230bb00f.chunk.css",
     "main.js": "/basic-todo-list/static/js/main.c70f07ba.chunk.js",
     "main.js.map": "/basic-todo-list/static/js/main.c70f07ba.chunk.js.map",
     "runtime-main.js": "/basic-todo-list/static/js/runtime-main.edc7793f.js",
@@ -8,16 +8,16 @@
     "static/js/2.23dcb599.chunk.js": "/basic-todo-list/static/js/2.23dcb599.chunk.js",
     "static/js/2.23dcb599.chunk.js.map": "/basic-todo-list/static/js/2.23dcb599.chunk.js.map",
     "index.html": "/basic-todo-list/index.html",
-    "precache-manifest.810a803f676f91a1ce760368bf2332b4.js": "/basic-todo-list/precache-manifest.810a803f676f91a1ce760368bf2332b4.js",
+    "precache-manifest.06bff5bec1c85337d87484fa66961650.js": "/basic-todo-list/precache-manifest.06bff5bec1c85337d87484fa66961650.js",
     "service-worker.js": "/basic-todo-list/service-worker.js",
-    "static/css/main.c2c39915.chunk.css.map": "/basic-todo-list/static/css/main.c2c39915.chunk.css.map",
+    "static/css/main.230bb00f.chunk.css.map": "/basic-todo-list/static/css/main.230bb00f.chunk.css.map",
     "static/media/edit.ec9c4e30.svg": "/basic-todo-list/static/media/edit.ec9c4e30.svg",
     "static/media/trashCan.41b4eecf.svg": "/basic-todo-list/static/media/trashCan.41b4eecf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.edc7793f.js",
     "static/js/2.23dcb599.chunk.js",
-    "static/css/main.c2c39915.chunk.css",
+    "static/css/main.230bb00f.chunk.css",
     "static/js/main.c70f07ba.chunk.js"
   ]
 }
