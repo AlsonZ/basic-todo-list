@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/basic-todo-list/static/css/main.b4ef3c77.chunk.css",
+    "main.css": "/basic-todo-list/static/css/main.db067e62.chunk.css",
     "main.js": "/basic-todo-list/static/js/main.e886dd9a.chunk.js",
     "main.js.map": "/basic-todo-list/static/js/main.e886dd9a.chunk.js.map",
     "runtime-main.js": "/basic-todo-list/static/js/runtime-main.edc7793f.js",
@@ -8,9 +8,9 @@
     "static/js/2.23dcb599.chunk.js": "/basic-todo-list/static/js/2.23dcb599.chunk.js",
     "static/js/2.23dcb599.chunk.js.map": "/basic-todo-list/static/js/2.23dcb599.chunk.js.map",
     "index.html": "/basic-todo-list/index.html",
-    "precache-manifest.deef1e12ef993b663caf23b6fdf98d4c.js": "/basic-todo-list/precache-manifest.deef1e12ef993b663caf23b6fdf98d4c.js",
+    "precache-manifest.2ba41b801ae9f8e56062829d91939f3f.js": "/basic-todo-list/precache-manifest.2ba41b801ae9f8e56062829d91939f3f.js",
     "service-worker.js": "/basic-todo-list/service-worker.js",
-    "static/css/main.b4ef3c77.chunk.css.map": "/basic-todo-list/static/css/main.b4ef3c77.chunk.css.map",
+    "static/css/main.db067e62.chunk.css.map": "/basic-todo-list/static/css/main.db067e62.chunk.css.map",
     "static/media/App.css": "/basic-todo-list/static/media/Notebook240p.99db44b4.jpg",
     "static/media/complete.7ba6b1ab.svg": "/basic-todo-list/static/media/complete.7ba6b1ab.svg",
     "static/media/edit.ec9c4e30.svg": "/basic-todo-list/static/media/edit.ec9c4e30.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.edc7793f.js",
     "static/js/2.23dcb599.chunk.js",
-    "static/css/main.b4ef3c77.chunk.css",
+    "static/css/main.db067e62.chunk.css",
     "static/js/main.e886dd9a.chunk.js"
   ]
 }
