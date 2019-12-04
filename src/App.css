@@ -9,8 +9,9 @@
   color: white;
 }
 .background {
-	background: #43cea2; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #43cea2 , #185a9d); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #43cea2 , #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #D7D8DD; /* fallback for old browsers */
+  background-image: linear-gradient(rgba(215,216,221,0.3),rgba(215,216,221,0.3)),url("Notebook.jpg");
+  background-size: cover;
+  background-position: center;
 }
 

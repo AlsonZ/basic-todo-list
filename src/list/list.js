@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ListElement from './listelement';
 import './style.css';
+import './addIcon.css';
 
 function List() {
 
   const [elements, setElements] = useState([]);
-  const [action, setAction] = useState("➕");
+  const [action, setAction] = useState("plus");
   const [box, setBox] = useState("");
+  const [minusIcon, setMinusIcon] = useState("");
   const inputElement = useRef(null);
 
   // useEffect(() => {
@@ -25,12 +27,14 @@ function List() {
   
   const openBox = () => {
     // make these svg's later
-    if(action == "➕") {
-      setAction("—");
+    if(action == "plus") {
+      setAction("minus");
       setBox("openBox");
+      setMinusIcon("minusIcon");
     } else {
-      setAction("➕");
+      setAction("plus");
       setBox("");
+      setMinusIcon("");
       inputElement.current.focus();
     }
   }
@@ -44,8 +48,13 @@ function List() {
 
   return (
     <div className="container">
-      <h1>Todo-list<i onClick={openBox} className="addElementIcon">{action}</i></h1>
-      <input type="text" autoFocus ref={inputElement} placeholder="Add a new Todo" className={"addElementInput" + " " +box}onKeyPress={addElement}/>
+      <h1>
+        Todo-list
+        <span onClick={openBox} className="iconToggle" > 
+          <span className={"addIcon" + " " + minusIcon}/>
+        </span>
+      </h1>
+      <input type="text" autoFocus ref={inputElement} placeholder="Add a new Todo" className={"addElementInput" + " " + box}onKeyPress={addElement}/>
       {elements.map((object, index) => {
         // convert this to context later
         return (<ListElement key={index} index={index} setElements={setElements} elements={elements} text={object.text}></ListElement>);
