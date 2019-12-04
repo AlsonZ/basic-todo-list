@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aad6af3623db5a543f68ad7e73ccfdd4",
+    "revision": "44e4a621ebe41976187f59c1fa45e51c",
     "url": "/basic-todo-list/index.html"
   },
   {
-    "revision": "aeb36a1fdec56c9be635",
-    "url": "/basic-todo-list/static/css/main.1f029ea6.chunk.css"
+    "revision": "e53232fb0dee01294b0e",
+    "url": "/basic-todo-list/static/css/main.dc1ff934.chunk.css"
   },
   {
     "revision": "067a8124354d269ba046",
     "url": "/basic-todo-list/static/js/2.23dcb599.chunk.js"
   },
   {
-    "revision": "aeb36a1fdec56c9be635",
+    "revision": "e53232fb0dee01294b0e",
     "url": "/basic-todo-list/static/js/main.e886dd9a.chunk.js"
   },
   {
     "revision": "84fb546ebf7a17c590a7",
     "url": "/basic-todo-list/static/js/runtime-main.edc7793f.js"
+  },
+  {
+    "revision": "2ab25020709ccef1b146e0bf3459df86",
+    "url": "/basic-todo-list/static/media/Notebook1440p.2ab25020.jpg"
   },
   {
     "revision": "2ed1ec9eb0b5a076df106acd244f12ee",
