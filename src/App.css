@@ -8,10 +8,17 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.background {
+.lazyLoad-background {
   background: #D7D8DD; /* fallback for old browsers */
+  background-image: linear-gradient(rgba(215,216,221,0.3),rgba(215,216,221,0.3)),url("Notebook240p.jpg");
+}
+.mid-res-background {
+  background-image: linear-gradient(rgba(215,216,221,0.3),rgba(215,216,221,0.3)),url("Notebook1440p.jpg");
+}
+.high-res-background {
   background-image: linear-gradient(rgba(215,216,221,0.3),rgba(215,216,221,0.3)),url("Notebook.jpg");
+}
+.lazyLoad-background, .mid-res-background, .high-res-background {
   background-size: cover;
   background-position: center;
 }
-

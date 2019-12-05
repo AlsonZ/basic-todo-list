@@ -5,6 +5,7 @@
 	--primary-color: #422924;/*2980b9   64504C  3F2B24*/
 	--highlight-color: #F19900;
 	--warning-color: #E83E00;
+	--success-color: #B3C0A4;
 }
 
 h1 {
@@ -40,6 +41,10 @@ h1 {
 	border: 3px solid var(--primary-color);
 	outline: none;
 }
+.addElementInput:not(:placeholder-shown) {
+	border: 3px solid var(--success-color);
+}
+
 .openBox {
 	display: none;
 }
