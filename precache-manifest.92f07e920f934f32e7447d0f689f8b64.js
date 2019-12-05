@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b5bd385633fbb199863febc23150d72",
+    "revision": "467bc350fc1e13ab63bac7de5bc8c237",
     "url": "/basic-todo-list/index.html"
   },
   {
-    "revision": "8e679e94b3e466098161",
-    "url": "/basic-todo-list/static/css/main.351760cf.chunk.css"
+    "revision": "153cb7b42d68f98f6fee",
+    "url": "/basic-todo-list/static/css/main.92e80817.chunk.css"
   },
   {
     "revision": "067a8124354d269ba046",
     "url": "/basic-todo-list/static/js/2.23dcb599.chunk.js"
   },
   {
-    "revision": "8e679e94b3e466098161",
-    "url": "/basic-todo-list/static/js/main.6137a26a.chunk.js"
+    "revision": "153cb7b42d68f98f6fee",
+    "url": "/basic-todo-list/static/js/main.5f7df303.chunk.js"
   },
   {
     "revision": "84fb546ebf7a17c590a7",
     "url": "/basic-todo-list/static/js/runtime-main.edc7793f.js"
+  },
+  {
+    "revision": "afda855b0a7e22f84d7b40b884424649",
+    "url": "/basic-todo-list/static/media/Notebook.afda855b.jpg"
   },
   {
     "revision": "2ab25020709ccef1b146e0bf3459df86",
